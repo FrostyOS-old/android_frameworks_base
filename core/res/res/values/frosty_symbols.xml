@@ -27,4 +27,7 @@
     <java-symbol type="array" name="config_deviceKeyHandlerLibs" />
     <java-symbol type="array" name="config_deviceKeyHandlerClasses" />
 
+    <!-- True if the gesture service should be started at system start -->
+    <bool name="config_enableGestureService">false</bool>
+
 </resources>
