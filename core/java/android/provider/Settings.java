@@ -4136,6 +4136,15 @@ public final class Settings {
                 ANY_STRING_VALIDATOR;
 
         /**
+         * Whether to display qs tile titles in the qs panel
+         * @hide
+         */
+        public static final String FROSTY_QS_TILE_TITLE_VISIBILITY = "qs_tile_title_visibility";
+         /** @hide */
+        private static final Validator FROSTY_QS_TILE_TITLE_VISIBILITY_VALIDATOR =
+                BOOLEAN_VALIDATOR;
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
@@ -4202,7 +4211,8 @@ public final class Settings {
             HAPTIC_FEEDBACK_INTENSITY,
             DISPLAY_COLOR_MODE,
             FROSTY_QS_LAYOUT_COLUMNS_LANDSCAPE,
-            FROSTY_QS_LAYOUT_COLUMNS
+            FROSTY_QS_LAYOUT_COLUMNS,
+            FROSTY_QS_TILE_TITLE_VISIBILITY
         };
 
         /**
@@ -4324,6 +4334,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_ON_TOUCH_ONLY);
             PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_COLUMNS_LANDSCAPE);
             PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_COLUMNS);
+            PRIVATE_SETTINGS.add(FROSTY_QS_TILE_TITLE_VISIBILITY);
         }
 
         /**
@@ -4414,6 +4425,7 @@ public final class Settings {
             VALIDATORS.put(SHOW_BATTERY_PERCENT, SHOW_BATTERY_PERCENT_VALIDATOR);
             VALIDATORS.put(FROSTY_QS_LAYOUT_COLUMNS_LANDSCAPE, FROSTY_QS_LAYOUT_COLUMNS_LANDSCAPE_VALIDATOR);
             VALIDATORS.put(FROSTY_QS_LAYOUT_COLUMNS, FROSTY_QS_LAYOUT_COLUMNS_VALIDATOR);
+            VALIDATORS.put(FROSTY_QS_TILE_TITLE_VISIBILITY, FROSTY_QS_TILE_TITLE_VISIBILITY_VALIDATOR);
         }
 
         /**
