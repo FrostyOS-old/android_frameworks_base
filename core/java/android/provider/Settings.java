@@ -4088,6 +4088,14 @@ public final class Settings {
         private static final Validator SHOW_BATTERY_PERCENT_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
+         * @hide
+         */
+        public static final String FROSTY_QS_LAYOUT_ROWS_LANDSCAPE = "qs_layout_rows_landscape";
+         /** @hide */
+        private static final Validator FROSTY_QS_LAYOUT_ROWS_LANDSCAPE_VALIDATOR =
+                ANY_INTEGER_VALIDATOR;
+
+        /**
          * Custom button brightness value for manual mode
          *
          * @hide
@@ -4222,6 +4230,7 @@ public final class Settings {
             FROSTY_QS_LAYOUT_COLUMNS,
             FROSTY_QS_TILE_TITLE_VISIBILITY,
             FROSTY_QS_LAYOUT_ROWS
+            FROSTY_QS_LAYOUT_ROWS_LANDSCAPE
         };
 
         /**
@@ -4345,6 +4354,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_COLUMNS);
             PRIVATE_SETTINGS.add(FROSTY_QS_TILE_TITLE_VISIBILITY);
             PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_ROWS);
+            PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_ROWS_LANDSCAPE);
         }
 
         /**
@@ -4437,6 +4447,7 @@ public final class Settings {
             VALIDATORS.put(FROSTY_QS_LAYOUT_COLUMNS, FROSTY_QS_LAYOUT_COLUMNS_VALIDATOR);
             VALIDATORS.put(FROSTY_QS_TILE_TITLE_VISIBILITY, FROSTY_QS_TILE_TITLE_VISIBILITY_VALIDATOR);
             VALIDATORS.put(FROSTY_QS_LAYOUT_ROWS, FROSTY_QS_LAYOUT_ROWS_VALIDATOR);
+            VALIDATORS.put(FROSTY_QS_LAYOUT_ROWS_LANDSCAPE, FROSTY_QS_LAYOUT_ROWS_LANDSCAPE_VALIDATOR);
         }
 
         /**
