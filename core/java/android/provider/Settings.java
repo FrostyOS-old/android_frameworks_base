@@ -4096,6 +4096,14 @@ public final class Settings {
                 ANY_INTEGER_VALIDATOR;
 
         /**
+         * @hide
+         */
+        public static final String FROSTY_QS_QUICKBAR_COLUMNS = "qs_quickbar_columns";
+         /** @hide */
+        private static final Validator FROSTY_QS_QUICKBAR_COLUMNS_VALIDATOR =
+                ANY_INTEGER_VALIDATOR;
+
+        /**
          * Custom button brightness value for manual mode
          *
          * @hide
@@ -4231,6 +4239,7 @@ public final class Settings {
             FROSTY_QS_TILE_TITLE_VISIBILITY,
             FROSTY_QS_LAYOUT_ROWS
             FROSTY_QS_LAYOUT_ROWS_LANDSCAPE
+            FROSTY_QS_QUICKBAR_COLUMNS
         };
 
         /**
@@ -4355,6 +4364,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(FROSTY_QS_TILE_TITLE_VISIBILITY);
             PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_ROWS);
             PRIVATE_SETTINGS.add(FROSTY_QS_LAYOUT_ROWS_LANDSCAPE);
+            PRIVATE_SETTINGS.add(FROSTY_QS_QUICKBAR_COLUMNS);
         }
 
         /**
@@ -4448,6 +4458,7 @@ public final class Settings {
             VALIDATORS.put(FROSTY_QS_TILE_TITLE_VISIBILITY, FROSTY_QS_TILE_TITLE_VISIBILITY_VALIDATOR);
             VALIDATORS.put(FROSTY_QS_LAYOUT_ROWS, FROSTY_QS_LAYOUT_ROWS_VALIDATOR);
             VALIDATORS.put(FROSTY_QS_LAYOUT_ROWS_LANDSCAPE, FROSTY_QS_LAYOUT_ROWS_LANDSCAPE_VALIDATOR);
+            VALIDATORS.put(FROSTY_QS_QUICKBAR_COLUMNS, FROSTY_QS_QUICKBAR_COLUMNS_VALIDATOR);
         }
 
         /**
